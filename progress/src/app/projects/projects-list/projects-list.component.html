@@ -1,0 +1,17 @@
+<div class="center">
+  <h1 class="text-centered">Projects</h1>
+  <table style="width:100%">
+    <tr>
+      <th>Title</th>
+      <th>Publish date</th>
+      <th>Location city</th>
+      <th>Comments</th>
+    </tr>
+    <tr *ngFor="let project of projects" [routerLink]="['./', project.id]" (click)="shareData(project)">
+      <td>{{project.title}}</td>
+      <td class="text-centered">{{project.publish_date | date:'short'}}</td>
+      <td class="text-centered">{{project.location_city}}</td>
+      <td class="text-centered">{{project.comments}}</td>
+    </tr>
+  </table>
+</div>

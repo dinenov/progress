@@ -1,0 +1,16 @@
+<div class="center">
+  <h1 class="text-centered">Project details</h1>
+
+  <div class="container">
+    <h2 class="text-centered">{{project.title}}</h2>
+    <div class="key">ID: <span class="value">{{project.id}}</span></div>
+    <div class="key">Publish date: <span class="value">{{project.publish_date | date:'short'}}</span></div>
+    <div class="key">Company name: <span class="value">{{project.company_name}}</span></div>
+    <div class="key">Contact name: <span class="value">{{project.contact_name}}</span></div>
+    <div class="key">Location city: <span class="value">{{project.location_city}}</span></div>
+    <div class="key">Comments: <span class="value">{{project.comments}}</span></div>
+    <div class="key">Description: <span class="value">{{project.description}}</span></div>
+    <br>
+    <div (click)="back()" class="text-right key">Close</div>
+  </div>
+</div>
